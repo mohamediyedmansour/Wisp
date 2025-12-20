@@ -3,3 +3,4 @@ requests-toolbelt
 tqdm 
 qrcode[pil] 
 rich
+pyperclip

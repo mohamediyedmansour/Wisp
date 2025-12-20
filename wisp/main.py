@@ -5,14 +5,12 @@ import sys
 import logging
 from pathlib import Path
 
-from uploader import CatboxUploader
-from exceptions import CatboxError
+from wisp.uploader import CatboxUploader
+from wisp.exceptions import CatboxError
 from utils import is_url
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(message)s"
-)
+logging.basicConfig(level=logging.INFO, format="%(message)s")
+
 
 def main() -> None:
     if len(sys.argv) != 2:
@@ -35,7 +33,7 @@ def main() -> None:
         sys.exit(2)
 
     except KeyboardInterrupt:
-        logging.warning("\nUpload cancelled by user.")
+        logging.warning("\nUpload cancelled.")
         sys.exit(130)
 
 

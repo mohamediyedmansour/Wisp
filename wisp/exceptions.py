@@ -1,2 +1,2 @@
 class CatboxError(Exception):
-    print(Exception)
+    """Exception handling"""
